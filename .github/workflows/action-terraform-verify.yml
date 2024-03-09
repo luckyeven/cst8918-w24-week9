@@ -31,6 +31,4 @@ jobs:
         id: validate
         run: terraform validate
 
-      - name: Fail if validation fails
-        if: ${{ steps.validate.outcome }} != 'success'
-        run: exit 1
+
